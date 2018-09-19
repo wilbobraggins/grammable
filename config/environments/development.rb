@@ -1,4 +1,7 @@
 Rails.application.configure do
+  class Application < Rails::Application
+    config.web_console.whiny_requests = false
+  end
   config.action_mailer.default_url_options = {host: 'localhost:3030'}
   # Settings specified here will take precedence over those in config/application.rb.
 
